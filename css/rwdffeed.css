@@ -44,6 +44,10 @@ header h1 {
   background-color: rgba(248,247,247,1); /*light gray*/
 }
 
+.block {
+  padding-bottom: 10px; 
+}
+
 .block h3 {
   height: 2em;
 }
@@ -53,8 +57,12 @@ header h1 {
   height: auto;
 }
 
-.block i {
-  font-size: 18px;
+.choose {
+  margin-top: 6px;
+}
+
+.choose i {
+  font-size: 24px;
 }
 
 a i.icon-thumbs-up { 
