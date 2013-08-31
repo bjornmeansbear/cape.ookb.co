@@ -41,6 +41,8 @@ header h1 {
 
 .block img {
   width: 100%;
+  height: auto;
+  
 }
 
 a i.icon-thumbs-up { 
