@@ -75,3 +75,18 @@ a i.icon-ban-circle {
   color: rgba(189,88,9,1);/*red-orange*/
 }
 
+.unused {
+  background-color: #BD5809; /*red-orange*/
+  background-color: rgba(189,88,9,.1);/*red-orange*/
+}
+
+.new {
+  background-color: #009AC9; /* blue */
+  background-color: rgba(0,154,201,.1) /* blue */
+}
+
+.featured {
+  background-color: #6EB000; /*green*/
+  background-color: rgba(110,176,0,.1);/*green*/
+}
+
