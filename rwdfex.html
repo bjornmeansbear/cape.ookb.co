@@ -260,6 +260,19 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
 
+    <!-- make all the bios the same height with JS, not CSS -->
+    <!-- from here: http://stackoverflow.com/questions/6781031/use-jquery-css-to-find-the-tallest-of-all-elements -->
+    <script>
+      $(document).ready(function() {
+        var maxHeight = -1;
+        $('.cape-feed').each(function() {
+          maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+        });
+        $('.cape-feed').each(function() {
+          $(this).height(maxHeight);
+        });
+      });
+    </script>
 
   </body>
 </html>
