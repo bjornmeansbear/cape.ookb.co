@@ -97,6 +97,6 @@ a i.icon-ban-circle {
 
 .unused .remove, 
 .featured .add {
-  visibility: hidden;
+  display: none;
 }
 
