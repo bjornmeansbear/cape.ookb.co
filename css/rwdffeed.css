@@ -46,14 +46,15 @@ header h1 {
 
 .block h3 {
   height: 2em;
-  display: table-cell;
-  vertical-align: bottom;
 }
 
 .block img {
   width: 100%;
   height: auto;
-  
+}
+
+.block i {
+  font-size: 18px;
 }
 
 a i.icon-thumbs-up { 
