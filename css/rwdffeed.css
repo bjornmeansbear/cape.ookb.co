@@ -11,10 +11,14 @@ html {
   font-size:1.5rem;
   }
 
-h1 {
+h1,h2 {
   font-family: 'Playfair Display', Georgia, serif;
   line-height: 1.25em;  
   }
+
+h3,h4,h5,h6 {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
 
 body { background: white; }
 
@@ -33,6 +37,10 @@ header img.logo {
 header h1 {
   color: #009AC9; /* blue */
   color: rgba(0,154,201,1) /* blue */
+}
+
+.block img {
+  width: 100%;
 }
 
 a i.icon-thumbs-up { 
