@@ -36,7 +36,8 @@ header img.logo {
 
 header h1 {
   color: #009AC9; /* blue */
-  color: rgba(0,154,201,1) /* blue */
+  color: rgba(0,154,201,1); /* blue */
+  margin-top:12px;
 }
 
 .cape-picker:hover {
