@@ -6,15 +6,17 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" mdia="screen">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <link href="http://cape.ookb.co/css/rwdffeed.css" rel="stylesheet">
+    <link href="css/rwdffeed.css" rel="stylesheet">
   </head>
 
   <body>
 
     <header>
       <div class="container">
-        <img class="logo pull-right" src="http://rwdfruhoh.ookb.co/assets/media/rwdflogo.jpg"/>
-        <h1 class="">Deutsch Foundation project feed</h1>
+        <div class="row">
+          <img class="logo pull-right" src="http://rwdfruhoh.ookb.co/assets/media/rwdflogo.jpg"/>
+          <h1 class="col-12">Deutsch Foundation project feed</h1>
+        </div>
       </div>
     </header>
 
@@ -190,6 +192,8 @@
           
           <h2>Featured</h2>
 
+          <p class="">These are the projects that are currently being featured on the homepage. Click the <i class="icon-ban-circle"></i> to send to projects in this list back to the unused feed.</p>
+
           <div class="row">
           
             <div class="col-6 cape-picker block" >
@@ -265,13 +269,19 @@
     <!-- from here: http://stackoverflow.com/questions/6781031/use-jquery-css-to-find-the-tallest-of-all-elements -->
     <script>
       $(document).ready(function() {
-        var maxHeight = -1;
-        $('.cape-feed').each(function() {
-          maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
-        });
-        $('.cape-feed').each(function() {
-          $(this).height(maxHeight);
-        });
+
+        if ($(window).width() >= 768){	
+          var maxHeight = -1;
+          $('.cape-feed').each(function() {
+            maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+          });
+          $('.cape-feed').each(function() {
+            $(this).height(maxHeight);
+          });
+        }	
+
+        else {}
+
       });
     </script>
 

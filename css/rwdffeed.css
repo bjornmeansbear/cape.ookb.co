@@ -32,12 +32,20 @@ header {
 
 header img.logo {
   width: 100px;
+  margin-bottom: -45px;
+}
+
+@media (max-width:760px ){
+  header img.logo {
+    display: none;
+  }
 }
 
 header h1 {
   color: #009AC9; /* blue */
   color: rgba(0,154,201,1); /* blue */
-  margin-top:12px;
+  margin-top:0;
+  margin-bottom: 0;
 }
 
 .cape-picker:hover {
@@ -66,12 +74,12 @@ header h1 {
   font-size: 24px;
 }
 
-a i.icon-thumbs-up { 
+i.icon-thumbs-up { 
   color: #6EB000; /*green*/
   color: rgba(110,176,0,1);/*green*/
 }
 
-a i.icon-ban-circle { 
+i.icon-ban-circle { 
   color: #BD5809; /*red-orange*/
   color: rgba(189,88,9,1);/*red-orange*/
 }
