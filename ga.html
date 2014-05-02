@@ -28,9 +28,11 @@
     <main class="container text-center">
     
       <article class="row" id="section1">
+      <p>something anything</p>
+      
       <script id="chapter-template" type="text/x-mustache-template">
-        <h1>{{.hed}}</h1>
-        <p class="lead">{{.dek}}</p>
+        <h1>{{hed}}</h1>
+        <p class="lead">{{dek}}</p>
         {{#subsection}}
           <section>
             <h2>{{subsection.subhead}}</h2>
@@ -47,6 +49,7 @@
           {{/image-wrapper}}
         {{/subsection}}
       </script>
+      
       </article>
 
     </main>
@@ -66,12 +69,13 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/hogan.js/3.0.0/hogan.js"></script>
 
     <script>
-      $.getJSON("section1idea.json",function(json){
+      $.getJSON("section1idea.json",function(){
         // require hogan
         var hogan = require("hogan.js");
         // compile template
         var chapterTemplate = Hogan.compile($('#chapter-template').html());
-        $('#section1').html(chapterTemplate.render(json));
+        // something else
+        $('#section1').html(chapterTemplate.render(data));
       });
     </script>
 
