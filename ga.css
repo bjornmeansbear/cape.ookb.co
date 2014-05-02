@@ -5,19 +5,3 @@ body {
 }
 
 img.logo { max-width: 100%; }
-
-.border-top {
-  border-top: 1.5px solid black;
-  margin-top: 60px;
-  padding-top: 60px;
-}
-
-#carousel-example-generic {
-  height: 555px;
-  max-height: 640px;
-}
-
-p.caption {
-  width: 75%;
-  margin: 1em auto;
-}
