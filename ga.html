@@ -25,31 +25,31 @@
       <h1>Green Acres</h1>
     </header>
 
-    <main class="container text-center">
+    <main class="container">
     
-      <article class="row" id="section1">
       <p>something anything</p>
+      <article class="row" id="section1">
       
-      <script id="chapter-template" type="text/x-mustache-template">
-        <h1>{{hed}}</h1>
-        <p class="lead">{{dek}}</p>
-        {{#subsection}}
-          <section>
-            <h2>{{subsection.subhead}}</h2>
-            {{#subsection.main-p}}
-              <p>{{.}}</p>
-            {{/subsection.main-p}}
-          </section>
-          {{#image-wrapper}}
-            <figure>
-              <img src="{{Image.-href_opt}} {{^Image.-href_opt}}{{Image.-href}}{{/Image.-href_opt}}">
-              <figcaption><p>{{sidebar}}</p></figcaption>
-              {{#photo-credit}}<small class="photo-credit">{{photo-credit}}</small>{{/photo-credit}}
-            </figure>
-          {{/image-wrapper}}
-        {{/subsection}}
-      </script>
-      
+        <script id="chapter-template" type="text/x-mustache-template">
+          <h1>{{hed}}</h1>
+          <p class="lead">{{dek}}</p>
+          {{#subsection}}
+            <section>
+              <h2>{{subsection.subhead}}</h2>
+              {{#subsection.main-p}}
+                <p>{{.}}</p>
+              {{/subsection.main-p}}
+            </section>
+            {{#image-wrapper}}
+              <figure>
+                <img src="{{Image.-href_opt}} {{^Image.-href_opt}}{{Image.-href}}{{/Image.-href_opt}}">
+                <figcaption><p>{{sidebar}}</p></figcaption>
+                {{#photo-credit}}<small class="photo-credit">{{photo-credit}}</small>{{/photo-credit}}
+              </figure>
+            {{/image-wrapper}}
+          {{/subsection}}
+        </script>
+        
       </article>
 
     </main>
